@@ -1,1 +1,1 @@
-from umpy import map, reduce, Hub
+from umpf import map, reduce, Hub
