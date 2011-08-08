@@ -1,5 +1,3 @@
-
-
 import multiprocessing as mp
 import itertools as it
 import inspect
@@ -126,7 +124,10 @@ class Hub(object):
             results = cls.map(_reduce, it.izip(it.repeat(f), steps))
             a, b = it.tee(results, 2)
         results = tuple(b)
-        return results[0]
+        if len(results) == 0:
+            return None
+        else:
+            return results[0]
 
 map = Hub.map
 reduce = Hub.reduce
