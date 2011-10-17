@@ -14,6 +14,6 @@ setup(name="pyumpf",
         "Programming Language :: Python :: 2.6", 
         "Programming Language :: Python :: 2.7", 
         "Topic :: Software Development :: Libraries :: Python Modules"], 
-    url="https://github.com/afaulconbridge/PyGA", 
+    url="https://github.com/afaulconbridge/pyumpf", 
     description="Python Unified Multiprocessing Parallel Functions", 
     long_description=open("README.txt").read() )

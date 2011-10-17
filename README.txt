@@ -22,3 +22,17 @@ For an example, see umpf_test.py Note that this example gives PP a poor performa
 it is running on a single machine, and this example is too small to make best use of the parallelism.
 Ideally, tasks should run for several seconds each and have easily pickleable arguments and returned
 values.
+
+By default, umpf defaults to pythons built-in map/reduce. These are single-threaded.
+
+To use multiprocessing, do the following:
+
+    import umpf
+    import multiprocessing as mp
+    umpf.Hub.pool = mp.Pool()
+    
+To use Parallel Python, do the following:
+
+    import umpy
+    import pp
+    umpy.Hub.pool = pp.Server()
