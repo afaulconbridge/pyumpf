@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name="pyumpf", 
-    version="0.1.0", 
+    version="0.1.1", 
     author="Adam Faulconbridge", 
     author_email="afaulconbridge@googlemail.com", 
     packages = find_packages(),
